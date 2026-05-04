@@ -1,0 +1,188 @@
+/* Кнопка в правом углу */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 65px; /* Расположили справа */
+  z-index: 100;
+}
+
+.sell-btn {
+  background: #23e5db;
+  color: #002f34;
+  position: absolute;
+  top: 20px;
+  right: 20px; 
+  z-index: 100;
+  padding: 10px 20px;
+  border-radius: 5px; 
+  font-weight: bold; 
+  border: none;
+  cursor: pointer;
+transition: box-shadow 0.3s ease;
+}
+.sell-btn:hover {
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+
+.button {
+  position: absolute;
+  top: 20px;
+  right: 250px; /* Расположили справа */
+  z-index: 100;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  
+}
+.button:hover {
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+
+.search-btn {
+  background: #002f34;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+.search-btn:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hamburger {
+  position: absolute;
+  top: 23px;
+  left: 20px; /* Расположили слева */
+  z-index: 100;
+  cursor: pointer;
+  
+}
+
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: #23e5db;
+  margin-bottom: 5px;
+  /* transition: 0.3s; */
+  /* transition: box-shadow 0.3s ease;
+}
+.hamburger span:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0); */
+}
+
+
+
+/* Меню, которое выезжает СПРАВА */
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: -100%; /* Спрятано за левым краем экрана */
+  width: 300px;
+  height: 100%;
+  background: #00636a;
+  transition: 0.5s; /* Скорость выезда */
+  padding-top: 80px;
+}
+
+/* Когда меню активно */
+.nav-menu.active {
+  left: 0; /* Прижимается к левому краю */
+}
+
+.nav-menu a {
+  color: white;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: box-shadow 0.3s ease;
+}
+.nav-menu a:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.category {
+  width: 150px; 
+  min-height: 50px;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease;
+}
+.category:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
+
+
+.footer {
+  background-color: #002f34; /* Темный фон */
+  color: #fff;
+  padding: 30px 0 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; /* Чтобы колонки переносились на мобильных */
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px; /* Минимальная ширина колонки */
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  color: #f39c12; /* Акцентный цвет для заголовков */
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #bbb;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-section a:hover {
+  color: #fff; /* Эффект при наведении */
+  padding-left: 5px; /* Небольшой сдвиг для динамики */
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  margin-top: 30px;
+  padding-top: 20px;
+  color: #777;
+  font-size: 14px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Высота экрана */
+  margin: 0;
+}
+
+.footer {
+  margin-top: auto; /* Выталкивает футер в самый низ */
+}

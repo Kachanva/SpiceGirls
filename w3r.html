@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marketplace</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f2f4f5;
+}
+
+/* HEADER */
+header {
+  background: #002f34;
+  color: white;
+  padding: 40px 4px;
+  display: fixed;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* .sell-btn {
+  background: #23e5db;
+  color: #002f34;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+.sell-btn:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0,);
+} */
+
+/* SEARCH */
+.search-section {
+  background: white;
+  padding: 20px 40px;
+  display: flex;
+  gap: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.search-section input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* .search-btn {
+  background: #002f34;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+.search-btn:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} */
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  background: white;
+  margin-top: 10px;
+}
+
+.category {
+  text-align: center;
+  cursor: pointer;
+}
+
+.category img {
+  width: 50px;
+  margin-bottom: 5px;
+}
+
+
+.listings {
+  padding: 40px;
+}
+
+.listings h2 {
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.price {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.location {
+  color: gray;
+  font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+  <div class="hamburger" id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+<!-- <script src="we/main.js"></script> -->
+
+<!-- Выпадающее меню -->
+<nav class="nav-menu" id="nav-menu">
+  <ul>
+    <li><a href="#">Главная</a></li>
+    <li><a href="#">О нас</a></li>
+    <li><a href="#">Услуги</a></li>
+    <li><a href="#">Контакты</a></li>
+  </ul>
+</nav>
+
+<header>
+  <div class="logo">Market</div>
+  <div class="sell-btn">+ Подать объявление</div>
+  <div class="button">Профиль</div>
+  
+</header>
+
+
+
+<section class="search-section">
+  <input type="text" placeholder="Что ищете?">
+  <input type="text" placeholder="Регион">
+  <button class="search-btn">Поиск</button>
+</section>
+
+
+
+<div class="categories">
+  <div class="category">
+    <img src="https://cdn-icons-png.flaticon.com/512/854/854878.png">
+    <div>Недвижимость</div>
+  </div>  
+  <div class="category">
+    <img src="https://cdn-icons-png.flaticon.com/512/743/743131.png">
+    <div>Авто</div>
+  </div>
+  <div class="category">
+    <img src="https://cdn-icons-png.flaticon.com/512/1048/1048943.png">
+    <div>Электроника</div>
+  </div>
+  <div class="category">
+    <img src="https://cdn-icons-png.flaticon.com/512/2331/2331949.png">
+    <div>Работа</div>
+  </div>
+</div>
+
+<section class="listings">
+  <h2>Свежие объявления</h2>
+  <div class="cards">
+    
+    <div class="card">
+      <img src="https://picsum.photos/400/300?1">
+      <div class="card-content">
+        <div class="price">120 000 ₽</div>
+        <div>iPhone 14 Pro</div>
+        <div class="location">Москва</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/400/300?2">
+      <div class="card-content">
+        <div class="price">450 000 ₽</div>
+        <div>Volkswagen Golf</div>
+        <div class="location">Санкт-Петербург</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/400/300?3">
+      <div class="card-content">
+        <div class="price">15 000 ₽</div>
+        <div>Игровой монитор</div>
+        <div class="location">Казань</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Колонка 1: О нас -->
+    <div class="footer-section">
+      <h3>О нас</h3>
+      <p> Следите за обновлениями!</p>
+    </div>
+
+    <!-- Колонка 2: Навигация -->
+    <div class="footer-section">
+      <h3>Ссылки</h3>
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Проекты</a></li>
+        <li><a href="#">Блог</a></li>
+      </ul>
+    </div>
+
+    <!-- Колонка 3: Контакты -->
+    <div class="footer-section">
+      <h3>Контакты</h3>
+      <p>Email: info@example.com</p>
+      <p>Тел: +7 (999) 000-00-00</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Ваша Компания. Все права защищены.</p>
+  </div>
+</footer>
+
+<link rel="stylesheet" href="we/re.css">
+<script src="we/main.js"></script>
+</body>
+</html>
